@@ -1,0 +1,28 @@
+.intro {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-top: 160px;
+}
+
+.intro-text-container {
+  position: absolute;
+  background-color: #fff;
+  bottom: -90px;
+  right: 0;
+  width: 544px;
+  padding: 90px 0 90px 95px;
+
+  .intro-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  .intro-desc {
+    color: hsl(0, 0%, 41%);
+    line-height: 1.6;
+  }
+}
