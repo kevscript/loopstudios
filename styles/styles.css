@@ -194,7 +194,29 @@ table {
 }
 
 .nav .nav-item {
+  cursor: pointer;
+  position: relative;
   margin-right: 30px;
+}
+
+.nav .nav-item::after {
+  -webkit-transition: all 0.28s linear;
+  transition: all 0.28s linear;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  content: '';
+  height: 2px;
+  width: 24px;
+  background-color: #fff;
+  opacity: 0;
+}
+
+.nav .nav-item:hover::after {
+  opacity: 1;
 }
 
 .hero-content {

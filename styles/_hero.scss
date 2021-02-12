@@ -41,7 +41,29 @@
   list-style: none;
 
   .nav-item {
+    cursor: pointer;
+    position: relative;
     margin-right: 30px;
+
+    &::after {
+      transition: all 0.28s linear;
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      content: '';
+      height: 2px;
+      width: 24px;
+      background-color: #fff;
+      opacity: 0;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
   }
 }
 
