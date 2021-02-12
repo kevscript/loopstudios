@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import '_reset.scss';
+@import '_hero.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Alata', 'Roboto', 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  width: 78%;
+  margin: 0 auto;
+  height: 100%;
+}
