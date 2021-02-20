@@ -250,7 +250,7 @@ table {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-top: 160px;
+  margin: 160px 0;
 }
 
 .intro-text-container {
@@ -273,6 +273,94 @@ table {
 .intro-text-container .intro-desc {
   color: dimgray;
   line-height: 1.6;
+}
+
+.creation {
+  margin-bottom: 160px;
+}
+
+.creation-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
+}
+
+.creation-header .creation-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.creation-header .creation-button {
+  text-transform: uppercase;
+  letter-spacing: 0.31rem;
+  background: transparent;
+  padding: 12px 36px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.creation-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(256px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+  gap: 30px;
+}
+
+.creation-grid .creation-grid-item {
+  position: relative;
+  height: 450px;
+}
+
+.creation-grid .creation-grid-item .creation-grid-item-img-container {
+  position: absolute;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.creation-grid .creation-grid-item .creation-grid-item-img-container img {
+  display: block;
+  width: 100%;
+}
+
+.creation-grid .creation-grid-item .creation-grid-item-img-container .creation-grid-item-img-container-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+}
+
+.creation-grid .creation-grid-item .creation-grid-item-title {
+  position: absolute;
+  bottom: 35px;
+  left: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 * {
