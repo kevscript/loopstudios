@@ -26,3 +26,55 @@
     line-height: 1.6;
   }
 }
+
+
+@media only screen and (max-width: 980px) {
+  .intro {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 96px 0;
+  }
+
+  .intro-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 48px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .intro-text-container {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    .intro-title {
+      text-align: center;
+    }
+
+    .intro-desc {
+      margin: 0 auto;
+      width: 90%;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+
+  .intro-text-container {
+    .intro-title {
+      font-size: 32px;
+    }
+  }
+}
