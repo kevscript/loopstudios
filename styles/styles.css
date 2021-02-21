@@ -307,6 +307,13 @@ table {
   padding: 12px 36px;
   border: 2px solid black;
   cursor: pointer;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.creation-header .creation-button:hover {
+  background: black;
+  color: #fff;
 }
 
 .creation-grid {
@@ -351,8 +358,8 @@ table {
   height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
   background: linear-gradient(to bottom, transparent 0%, black 100%);
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .creation-grid .creation-grid-item .creation-grid-item-title {
@@ -429,6 +436,31 @@ footer {
   margin-right: 15px;
 }
 
+.footer-top .footer-socials .footer-social-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.footer-top .footer-socials .footer-social-item::after {
+  -webkit-transition: all 0.28s linear;
+  transition: all 0.28s linear;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0;
+}
+
+.footer-top .footer-socials .footer-social-item:hover::after {
+  opacity: 1;
+}
+
 .footer-bottom {
   width: 100%;
   display: -webkit-box;
@@ -448,6 +480,31 @@ footer {
 
 .footer-bottom .footer-nav .footer-nav-item:not(:last-child) {
   margin-right: 34px;
+}
+
+.footer-bottom .footer-nav .footer-nav-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.footer-bottom .footer-nav .footer-nav-item::after {
+  -webkit-transition: all 0.28s linear;
+  transition: all 0.28s linear;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  content: '';
+  height: 2px;
+  width: 24px;
+  background-color: #fff;
+  opacity: 0;
+}
+
+.footer-bottom .footer-nav .footer-nav-item:hover::after {
+  opacity: 1;
 }
 
 .footer-bottom .footer-copyright {

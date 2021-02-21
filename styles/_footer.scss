@@ -28,6 +28,31 @@ footer {
     .footer-social-item:not(:last-child) {
       margin-right: 15px;
     }
+
+    .footer-social-item {
+      position: relative; 
+      cursor: pointer;
+
+      &::after {
+        transition: all 0.28s linear;
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        content: '';
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        opacity: 0;
+      }
+  
+      &:hover {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
   }
 }
 
@@ -42,6 +67,31 @@ footer {
 
     .footer-nav-item:not(:last-child) {
       margin-right: 34px;
+    }
+
+    .footer-nav-item {
+      position: relative;
+      cursor: pointer;
+
+      &::after {
+        transition: all 0.28s linear;
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        content: '';
+        height: 2px;
+        width: 24px;
+        background-color: #fff;
+        opacity: 0;
+      }
+  
+      &:hover {
+        &::after {
+          opacity: 1;
+        }
+      }
     }
   }
 
